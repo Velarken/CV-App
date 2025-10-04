@@ -13,10 +13,10 @@ export default function Form(props) {
     return (
         <>
           <div className="sectionHead">
-            <h3>{props.name}</h3>
+            <h3 className='title'>{props.name}</h3>
             {props.addButton ? <button className='addSection' id={props.id + 'Button'} >Add Section</button> : null}
           </div>
-          <div>{listItems}</div>
+          <div className="sectionContent">{listItems}</div>
         </>
     )
 }
