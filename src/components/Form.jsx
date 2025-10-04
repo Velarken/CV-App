@@ -1,19 +1,22 @@
+import '../styles/Form.css'
 import FormField from './FormField'
 
-export default function Form({name,fields}) {
-
+export default function Form(props) {
+  const listItems = props.fields.map(field =>
+    <FormField
+      key={field.name}
+      type={field.type}
+      name={field.name}
+      text={field.label}
+    />
+  )
     return (
         <>
-          <h1>Hello World.</h1>
-          <h1>{name}</h1>
-          {fields.map((field) => {
-            <FormField 
-              type={field[0]}
-              name={field[1]}
-              text={field[2]}
-            />
-          })}
-       
+          <div className="sectionHead">
+            <h3>{props.name}</h3>
+            {props.addButton ? <button className='addSection' id={props.id + 'Button'} >Add Section</button> : null}
+          </div>
+          <div>{listItems}</div>
         </>
     )
 }
