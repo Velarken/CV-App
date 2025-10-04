@@ -1,3 +1,4 @@
+import '../styles/FormField.css'
 export default function FormField(props) {
     let textArea = false
     let addSkills = false
@@ -10,20 +11,17 @@ export default function FormField(props) {
     return (
         <>
             {textArea ? 
-              <>
-                <label htmlFor={props.name}>{props.text}</label>
-                <textarea name={props.name} /> 
-              </>
+              <div className="textareaSection">
+                <label htmlFor={props.name} className='flexItem'>{props.text}</label>
+                <textarea name={props.name}  className='flexItem'/> 
+              </div>
               : null }
             {!textArea && !addSkills ?
-              <> 
-                <label htmlFor={props.name}>{props.text}</label>
-                <input name={props.name}/> 
-              </>
+              <div className="normalSection"> 
+                <label htmlFor={props.name} className='flexItem'>{props.text}</label>
+                <input type={props.type} name={props.name} className='flexItem'/> 
+              </div>
             : null}
-            {addSkills ? 
-              <button className={props.name}>Add Related Job Skill</button> 
-              : null}
         </>
     )
 }
