@@ -1,0 +1,11 @@
+.textareaSection {
+    display:flex;
+}
+.normalSection {
+    display:flex;
+}
+.flexItem {
+    display:flex;
+    margin:1vw;
+    flex:1;
+}

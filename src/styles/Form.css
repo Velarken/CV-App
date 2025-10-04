@@ -1,3 +1,18 @@
 .sectionHead {
     display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: teal;
+}
+.title {
+    text-align: center;
+}
+.sectionContent {
+    display:flex;
+    flex-wrap:wrap;
+    width:70vw;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+    color:black;
 }
