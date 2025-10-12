@@ -1,13 +1,21 @@
+import '../styles/App.css'
 import Form from "./Form";
 import { CONTACTFIELDS, JOBHISTORYFIELDS, EDUCATIONFIELDS, SKILLFIELDS } from "../logic/data";
+import {BasicInfoInput} from './BasicInfoInput'
+import {JobHistory} from './JobHistory'
+import {Education} from './Education'
 
 export default function App() {
+    // write functions here to: 
+      // control whether the form or display version shows
+      // add additional Job component
+      // add addtional Education component
+    
     return (
         <>
-          <Form name='Contact Info' fields={CONTACTFIELDS} addButton={false} />
-          <Form name='Job History' id='jobHistory' fields={JOBHISTORYFIELDS} addButton={true} />
-          <Form name='Education History' id='educationHistory' fields={EDUCATIONFIELDS} addButton={true} />
-          <Form name='Skills' id='jobSkills' fields={SKILLFIELDS} addButton={true} />
+          <BasicInfoInput />
+          <JobHistory />
+          <Education />
         </>
     )
 }
