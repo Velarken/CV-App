@@ -25,12 +25,13 @@ export const EDUCATIONFIELDS = [
     {type:'number',name:'yearStarted',label:'Started In:  '},
     {type:'number',name:'yearFinished',label:'Ended In:  '},
     {type:'checkbox',name:'didGraduate',label:'Graduated?  '},
-    {type:'text',name:'ciriculum',label:'Course of Study'},
-    {type:'textarea',name:'ciriculumDetails',label:'Describe Your Major:  '},
+    {type:'text',name:'curriculum',label:'Course of Study'},
+    {type:'textarea',name:'curriculumDetails',label:'Describe Your Major:  '},
 ]
 export const SKILLFIELDS = [
     {type:'text',name:'jobSkill',label:'Skill:  '},
     {type:'text',name:'proficiency',label:'Experience Length:  '}
 ]
 
+export const fullName = ''
 // {type:'',name:'',label:''},
